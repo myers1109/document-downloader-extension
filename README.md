@@ -8,7 +8,7 @@ This Chrome Extension allows you to download Scribd documents as PDF.
 2.  Open Chrome and go to `chrome://extensions/`.
 3.  Enable **Developer mode** in the top right corner.
 4.  Click **Load unpacked**.
-5.  Select the `scribd-downloader-extension` folder.
+5.  Select the `document-downloader-extension` folder.
 
 ## Usage
 
