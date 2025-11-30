@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Scribd Downloader Pro",
+  "version": "1.0",
+  "description": "Download Scribd documents as PDF with optimized performance.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "*://www.scribd.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Download Scribd PDF"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.scribd.com/embeds/*/content*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

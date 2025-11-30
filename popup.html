@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Scribd Downloader</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Scribd Downloader</h2>
+      <p class="subtitle">Professional Version</p>
+    </div>
+    
+    <div class="content">
+      <div class="input-group">
+        <label for="urlInput">Document URL</label>
+        <input type="text" id="urlInput" placeholder="https://www.scribd.com/document/..." />
+      </div>
+      
+      <button id="downloadBtn" class="btn primary">Start Download</button>
+      
+      <div id="status" class="status-area"></div>
+    </div>
+    
+    <div class="footer">
+      <p>Note: You will need to click "Save" in the print dialog.</p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
